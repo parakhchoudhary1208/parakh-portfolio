@@ -22,7 +22,7 @@ const Contact = () => {
         return () => {
             window.removeEventListener("mousemove", updatePos);
         }
-    }, [])
+    }, [updatePos])
 
     return (
         <Reveal initialY={40} delay={0.5}>

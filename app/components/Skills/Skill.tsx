@@ -31,7 +31,7 @@ const Skill = ({ icon, name }: Props) => {
         return () => {
             window.removeEventListener("mousemove", handleMouseMove)
         }
-    }, []);
+    }, [handleMouseMove]);
 
     return (
         <Reveal duration={1.5}>

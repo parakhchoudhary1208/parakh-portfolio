@@ -1,0 +1,16 @@
+[
+    {
+        "image" : "/company_1.jpeg",
+        "company": "Pixel6 Web Studio Pvt. Ltd., Pune",
+        "role": "Associate Software Engineer - (Frontend Developer)",
+        "description": "Developed dynamic and reusable components using React with JSX & TSX. Managed global state efficiently using Redux. Built responsive, interactive UI components, focusing on performance and reusability. Created HTML, SCSS, and JavaScript templates for WordPress themes. Used GSAP for smooth animations in both React and WordPress projects. Ensured SEO optimisation, followed W3C guidelines, and focused on performance optimisation for web applications.",
+        "dates": "Sep 2023 - August 2024"
+    },
+    {
+        "image" : "/company_1.jpeg",
+        "company": "Pixel6 Web Studio Pvt. Ltd., Pune",
+        "role": "Trainee Software Engineer",
+        "description": "Built responsive and interactive web interfaces using Bootstrap, HTML5, CSS3, jQuery & React.js. Worked on WordPress theme development, customizing templates, and optimising performance. Focused on SEO, cross-browser compatibility, and smooth animations to enhance user experience. Improved problem-solving skills while collaborating on real projects.",
+        "dates": "Dec 2022 - August 2023"
+    }
+]

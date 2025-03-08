@@ -1,0 +1,46 @@
+[
+    {
+        "thumbnail": "/pixel6_thumbnail.png",
+        "title": "Pixel6 Web Studio",
+        "link": {
+            "label": "pixel6.co",
+            "url": "https://www.pixel6.co"
+        },
+        "description": "Transformed an outdated company website into a sleek, fast, and user-friendly platform using the latest web technologies.",
+        "languageIcons": ["/html_icon.svg", "/css_icon.svg", "/js_icon.svg", "/gsap_icon.svg", "/wp_icon.svg"],
+        "className": ""
+    },
+    {
+        "thumbnail": "/rms_thumbnail.png",
+        "title": "RMS Marketing Page",
+        "link": {
+            "label": "RMS",
+            "url": "https://lab.pixel6.co/rms/"
+        },
+        "description": "Built an SEO-optimized, visually compelling marketing page highlighting key POS solutions to attract potential customers.",
+        "languageIcons": ["/html_icon.svg", "/css_icon.svg", "/js_icon.svg", "/gsap_icon.svg", "/php_icon.svg"],
+        "className": ""
+    },
+    {
+        "thumbnail": "/chungiyo_thumbnail.png",
+        "title": "Awwward's Clone Site",
+        "link": {
+            "label": "See Magic",
+            "url": " https://parakhchoudhary1208.github.io/chungi-yo/"
+        },
+        "description": "Recreated the Awwwards website as a practice project, focusing on modern UI/UX, animations, and responsive design.",
+        "languageIcons": ["/html_icon.svg", "/css_icon.svg", "/js_icon.svg", "/gsap_icon.svg"],
+        "className": ""
+    },
+    {
+        "thumbnail": "/email_thumbnail.png",
+        "title": "E-Mail Application",
+        "link": {
+            "label": "E-Mail Application",
+            "url": "https://github.com/parakhchoudhary1208/gmail"
+        },
+        "description": "Developed a full-featured email system with sign-up, login, logout, send/receive emails, read/unread status, and profile picture upload using Multer.",
+        "languageIcons": ["/node_icon.svg", "/mongodb_icon.svg", "/mongoose_icon.svg", "/html_icon.svg", "/bootstrap_icon.svg"],
+        "className": ""
+    }
+]

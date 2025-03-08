@@ -1,0 +1,54 @@
+[
+  {
+    "name": "HTML5",
+    "icon": "/html_icon.svg"
+  },
+  {
+    "name": "CSS3",
+    "icon": "/css_icon.svg"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "/js_icon.svg"
+  },
+  {
+    "name": "SCSS",
+    "icon": "/scss_icon.svg"
+  },
+  {
+    "name": "Bootstrap",
+    "icon": "/bootstrap_icon.svg"
+  },
+  {
+    "name": "Tailwind CSS",
+    "icon": "/tailwind_icon.svg"
+  },
+  {
+    "name": "React.js",
+    "icon": "/react_icon.svg"
+  },
+  {
+    "name": "Next.js",
+    "icon": "/next_icon.svg"
+  },
+  {
+    "name": "GSAP",
+    "icon": "/gsap_icon.svg"
+  },
+  {
+    "name": "Framer Motion",
+    "icon": "/framer_icon.svg"
+  },
+  {
+    "name": "Three.js",
+    "icon": "/threejs_icon.svg"
+  },
+  {
+    "name": "Git",
+    "icon": "/git_icon.svg"
+  },
+  {
+    "name": "Figma",
+    "icon": "/figma_icon.svg"
+  }
+]

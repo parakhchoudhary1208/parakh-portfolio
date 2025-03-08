@@ -703,7 +703,9 @@ const Skill = ({ icon, name })=>{
         return ()=>{
             window.removeEventListener("mousemove", handleMouseMove);
         };
-    }, []);
+    }, [
+        handleMouseMove
+    ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
         duration: 1.5,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -753,9 +755,6 @@ const Skill = ({ icon, name })=>{
     }, this);
 };
 const __TURBOPACK__default__export__ = Skill;
-function retrun() {
-    throw new Error('Function not implemented.');
-}
 }}),
 "[project]/app/components/Skills/Skills.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -857,7 +856,7 @@ const __TURBOPACK__default__export__ = Skills;
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
 {
-__turbopack_export_value__(JSON.parse("[{\"thumbnail\":\"/pixel6_thumbnail.png\",\"title\":\"Pixel6 Web Studio\",\"link\":{\"label\":\"pixel6.co\",\"url\":\"https://www.pixel6.co\"},\"description\":\"Transformed an outdated company website into a sleek, fast, and user-friendly platform using the latest web technologies.\",\"languageIcons\":[\"/html_icon.svg\",\"/css_icon.svg\",\"/js_icon.svg\",\"/gsap_icon.svg\",\"/wp_icon.svg\"],\"className\":\"\"},{\"thumbnail\":\"/rms_thumbnail.png\",\"title\":\"RMS Marketing Page\",\"link\":{\"label\":\"RMS\",\"url\":\"https://lab.pixel6.co/rms/\"},\"description\":\"Built an SEO-optimized, visually compelling marketing page highlighting key POS solutions to attract potential customers.\",\"languageIcons\":[\"/html_icon.svg\",\"/css_icon.svg\",\"/js_icon.svg\",\"/gsap_icon.svg\",\"/php_icon.svg\"],\"className\":\"\"},{\"thumbnail\":\"/chungiyo_thumbnail.png\",\"title\":\"Awwward's Clone Site\",\"link\":{\"label\":\"See Magic\",\"url\":\" https://parakhchoudhary1208.github.io/chungi-yo/\"},\"description\":\"Recreated the Awwwards website as a practice project, focusing on modern UI/UX, animations, and responsive design.\",\"languageIcons\":[\"/html_icon.svg\",\"/css_icon.svg\",\"/js_icon.svg\",\"/gsap_icon.svg\"],\"className\":\"\"},{\"thumbnail\":\"/email_thumbnail.png\",\"title\":\"E-Mail Application\",\"link\":{\"label\":\"E-Mail Application\",\"url\":\"https://github.com/parakhchoudhary1208/gmail\"},\"description\":\"Developed a full-featured email system with sign-up, login, logout, send/receive emails, read/unread status, and profile picture upload using Multer.\",\"languageIcons\":[\"/node_icon.svg\",\"/mongodb_icon.svg\",\"/mongoose_icon.svg\",\"/html_icon.svg\",\"/bootstrap_icon.svg\"],\"className\":\"\"}]"));}}),
+__turbopack_export_value__(JSON.parse("[{\"thumbnail\":\"/pixel6_thumbnail.png\",\"title\":\"Pixel6 Web Studio\",\"link\":{\"label\":\"pixel6.co\",\"url\":\"https://www.pixel6.co\"},\"description\":\"Transformed an outdated company website into a sleek, fast, and user-friendly platform using the latest web technologies.\",\"languageIcons\":[\"/html_icon.svg\",\"/css_icon.svg\",\"/js_icon.svg\",\"/gsap_icon.svg\",\"/wp_icon.svg\"]},{\"thumbnail\":\"/rms_thumbnail.png\",\"title\":\"RMS Marketing Page\",\"link\":{\"label\":\"RMS\",\"url\":\"https://lab.pixel6.co/rms/\"},\"description\":\"Built an SEO-optimized, visually compelling marketing page highlighting key POS solutions to attract potential customers.\",\"languageIcons\":[\"/html_icon.svg\",\"/css_icon.svg\",\"/js_icon.svg\",\"/gsap_icon.svg\",\"/php_icon.svg\"]},{\"thumbnail\":\"/chungiyo_thumbnail.png\",\"title\":\"Awwward's Clone Site\",\"link\":{\"label\":\"See Magic\",\"url\":\" https://parakhchoudhary1208.github.io/chungi-yo/\"},\"description\":\"Recreated the Awwwards website as a practice project, focusing on modern UI/UX, animations, and responsive design.\",\"languageIcons\":[\"/html_icon.svg\",\"/css_icon.svg\",\"/js_icon.svg\",\"/gsap_icon.svg\"]},{\"thumbnail\":\"/email_thumbnail.png\",\"title\":\"E-Mail Application\",\"link\":{\"label\":\"E-Mail Application\",\"url\":\"https://github.com/parakhchoudhary1208/gmail\"},\"description\":\"Developed a full-featured email system with sign-up, login, logout, send/receive emails, read/unread status, and profile picture upload using Multer.\",\"languageIcons\":[\"/node_icon.svg\",\"/mongodb_icon.svg\",\"/mongoose_icon.svg\",\"/html_icon.svg\",\"/bootstrap_icon.svg\"]}]"));}}),
 "[project]/app/components/Projects/Project.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -878,7 +877,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 ;
 ;
 ;
-const Project = ({ thumbnail, title, link, description, languageIcons, className })=>{
+const Project = ({ thumbnail, title, link, description, languageIcons })=>{
     const x = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMotionValue"])(0);
     const y = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMotionValue"])(0);
     const xSpring = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$spring$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSpring"])(x);
@@ -934,7 +933,7 @@ const Project = ({ thumbnail, title, link, description, languageIcons, className
                     }
                 }, void 0, false, {
                     fileName: "[project]/app/components/Projects/Project.tsx",
-                    lineNumber: 55,
+                    lineNumber: 53,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -948,7 +947,7 @@ const Project = ({ thumbnail, title, link, description, languageIcons, className
                                     children: title
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Projects/Project.tsx",
-                                    lineNumber: 61,
+                                    lineNumber: 59,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -961,7 +960,7 @@ const Project = ({ thumbnail, title, link, description, languageIcons, className
                                             children: link.label
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Projects/Project.tsx",
-                                            lineNumber: 63,
+                                            lineNumber: 61,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -970,7 +969,7 @@ const Project = ({ thumbnail, title, link, description, languageIcons, className
                                             className: "block dark:hidden"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Projects/Project.tsx",
-                                            lineNumber: 64,
+                                            lineNumber: 62,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -979,19 +978,19 @@ const Project = ({ thumbnail, title, link, description, languageIcons, className
                                             className: "hidden dark:block"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Projects/Project.tsx",
-                                            lineNumber: 65,
+                                            lineNumber: 63,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/Projects/Project.tsx",
-                                    lineNumber: 62,
+                                    lineNumber: 60,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/Projects/Project.tsx",
-                            lineNumber: 60,
+                            lineNumber: 58,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -999,7 +998,7 @@ const Project = ({ thumbnail, title, link, description, languageIcons, className
                             children: description
                         }, void 0, false, {
                             fileName: "[project]/app/components/Projects/Project.tsx",
-                            lineNumber: 69,
+                            lineNumber: 67,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1011,29 +1010,29 @@ const Project = ({ thumbnail, title, link, description, languageIcons, className
                                     width: 24
                                 }, id, false, {
                                     fileName: "[project]/app/components/Projects/Project.tsx",
-                                    lineNumber: 73,
+                                    lineNumber: 71,
                                     columnNumber: 33
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/components/Projects/Project.tsx",
-                            lineNumber: 70,
+                            lineNumber: 68,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/Projects/Project.tsx",
-                    lineNumber: 59,
+                    lineNumber: 57,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/Projects/Project.tsx",
-            lineNumber: 50,
+            lineNumber: 48,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/Projects/Project.tsx",
-        lineNumber: 49,
+        lineNumber: 47,
         columnNumber: 9
     }, this);
 };
@@ -1359,7 +1358,9 @@ const Contact = ()=>{
         return ()=>{
             window.removeEventListener("mousemove", updatePos);
         };
-    }, []);
+    }, [
+        updatePos
+    ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
         initialY: 40,
         delay: 0.5,

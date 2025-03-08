@@ -49,7 +49,3 @@ const Skill = ({ icon, name }: Props) => {
 }
 
 export default Skill;
-function retrun() {
-    throw new Error('Function not implemented.');
-}
-

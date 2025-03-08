@@ -13,11 +13,9 @@ type Props = {
     };
     description: string;
     languageIcons: string[];
-    className?: string 
-
 }
 
-const Project = ({thumbnail, title, link, description, languageIcons, className}: Props) => {
+const Project = ({thumbnail, title, link, description, languageIcons}: Props) => {
 
     const x = useMotionValue(0);
     const y = useMotionValue(0);

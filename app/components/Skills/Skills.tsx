@@ -11,7 +11,7 @@ const Skills = () => {
         <SectionContainer id='skills' >
             <div className="section-contents mx-[22px] md:mx-[116px]">
                 <SectionHeader plainText='💻 This is my' highlightText='Tech Stacks'/>
-                <div className="card w-full px-[32px] py-[28px] flex flex-wrap flex-col md:flex-row justify-center items-center gap-[20px] md:gap-[32px]">
+                <div className="card w-full px-[32px] py-[28px] flex flex-wrap md:flex-row justify-center items-center gap-[20px] md:gap-[32px]">
                     {
                         skills.map((skill, id) => (
                             <Skill key={id} name={skill.name} icon={skill.icon}/>

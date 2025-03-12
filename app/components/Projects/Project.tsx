@@ -47,7 +47,7 @@ const Project = ({thumbnail, title, link, description, languageIcons}: Props) =>
         <Reveal initialX={-50} delay={0.5}>
             <motion.div 
                 onMouseMove={(e) => {window.innerWidth >= 768 ? handleMouseMove(e) : ""}} 
-                onMouseOut={(e) => {window.innerWidth >= 768 ? handleMouseLeave() : ""}} 
+                onMouseOut={() => {window.innerWidth >= 768 ? handleMouseLeave() : ""}} 
                 className="card flex flex-col items-stretch w-full max-w-[428.4px] p-5 md:p-[18px] gap-[30px]" 
                 style={{
                     transformStyle: "preserve-3d",

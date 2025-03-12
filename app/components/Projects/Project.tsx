@@ -45,11 +45,16 @@ const Project = ({thumbnail, title, link, description, languageIcons}: Props) =>
 
     return (
         <Reveal initialX={-50} delay={0.5}>
-            <motion.div onMouseMove={handleMouseMove} onMouseOut={handleMouseLeave} className="card flex flex-col items-stretch w-full max-w-[428.4px] p-5 md:p-[18px] gap-[30px]" style={{
-                transformStyle: "preserve-3d",
-                rotateY: yRotation,
-                rotateX: xRotation,
-            }}>
+            <motion.div 
+                onMouseMove={(e) => {window.innerWidth >= 768 ? handleMouseMove(e) : ""}} 
+                onMouseOut={(e) => {window.innerWidth >= 768 ? handleMouseLeave() : ""}} 
+                className="card flex flex-col items-stretch w-full max-w-[428.4px] p-5 md:p-[18px] gap-[30px]" 
+                style={{
+                    transformStyle: "preserve-3d",
+                    rotateY: yRotation,
+                    rotateX: xRotation,
+                }}
+            >
                 <Image src={thumbnail} alt={`Thumbnail for ${title}`} width={392} height={230} className="w-full h-[230px] object-cover object-center opacity-90 rounded-lg" style={{transform: "translateZ(100px)"}}/>
                 {/* <div className="h-[230px] overflow-hidden bg-[#bcaeffbf] rounded">
                     <img src={thumbnail} alt={`Thumbnail for ${title}`} className="w-auto h-full mx-auto object-contain object-center"/>

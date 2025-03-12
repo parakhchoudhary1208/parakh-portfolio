@@ -43,11 +43,24 @@ const Project = ({thumbnail, title, link, description, languageIcons}: Props) =>
         y.set(0);
     }
 
+    const [isDesktop, setIsDesktop] = React.useState(false);
+
+    React.useEffect(() => {
+        const updateScreenSize = () => {
+            setIsDesktop(window.innerWidth >= 768);
+        };
+        updateScreenSize();
+        window.addEventListener("resize", updateScreenSize);
+        return () => window.removeEventListener("resize", updateScreenSize);
+    }, []);
+
+
+
     return (
         <Reveal initialX={-50} delay={0.5}>
             <motion.div 
-                onMouseMove={(e) => {window.innerWidth >= 768 ? handleMouseMove(e) : ""}} 
-                onMouseOut={() => {window.innerWidth >= 768 ? handleMouseLeave() : ""}} 
+                onMouseMove={isDesktop ? handleMouseMove : undefined}
+                onMouseLeave={isDesktop ? handleMouseLeave : undefined}
                 className="card flex flex-col items-stretch w-full max-w-[428.4px] p-5 md:p-[18px] gap-[30px]" 
                 style={{
                     transformStyle: "preserve-3d",

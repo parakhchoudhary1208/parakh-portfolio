@@ -867,12 +867,14 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/app/components/Reveal.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/value/use-motion-value.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$spring$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/value/use-spring.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/value/use-transform.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -909,6 +911,16 @@ const Project = ({ thumbnail, title, link, description, languageIcons })=>{
         x.set(0);
         y.set(0);
     };
+    const [isDesktop, setIsDesktop] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(false);
+    useEffect(()=>{
+        // Function to update screen size
+        const updateScreenSize = ()=>{
+            setIsDesktop(window.innerWidth >= 768);
+        };
+        updateScreenSize(); // Run on mount
+        window.addEventListener("resize", updateScreenSize);
+        return ()=>window.removeEventListener("resize", updateScreenSize);
+    }, []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
         initialX: -50,
         delay: 0.5,
@@ -937,7 +949,7 @@ const Project = ({ thumbnail, title, link, description, languageIcons })=>{
                     }
                 }, void 0, false, {
                     fileName: "[project]/app/components/Projects/Project.tsx",
-                    lineNumber: 58,
+                    lineNumber: 74,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -951,7 +963,7 @@ const Project = ({ thumbnail, title, link, description, languageIcons })=>{
                                     children: title
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Projects/Project.tsx",
-                                    lineNumber: 64,
+                                    lineNumber: 80,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -964,7 +976,7 @@ const Project = ({ thumbnail, title, link, description, languageIcons })=>{
                                             children: link.label
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Projects/Project.tsx",
-                                            lineNumber: 66,
+                                            lineNumber: 82,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -973,7 +985,7 @@ const Project = ({ thumbnail, title, link, description, languageIcons })=>{
                                             className: "block dark:hidden"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Projects/Project.tsx",
-                                            lineNumber: 67,
+                                            lineNumber: 83,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -982,19 +994,19 @@ const Project = ({ thumbnail, title, link, description, languageIcons })=>{
                                             className: "hidden dark:block"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Projects/Project.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 84,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/Projects/Project.tsx",
-                                    lineNumber: 65,
+                                    lineNumber: 81,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/Projects/Project.tsx",
-                            lineNumber: 63,
+                            lineNumber: 79,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1002,7 +1014,7 @@ const Project = ({ thumbnail, title, link, description, languageIcons })=>{
                             children: description
                         }, void 0, false, {
                             fileName: "[project]/app/components/Projects/Project.tsx",
-                            lineNumber: 72,
+                            lineNumber: 88,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1014,29 +1026,29 @@ const Project = ({ thumbnail, title, link, description, languageIcons })=>{
                                     width: 24
                                 }, id, false, {
                                     fileName: "[project]/app/components/Projects/Project.tsx",
-                                    lineNumber: 76,
+                                    lineNumber: 92,
                                     columnNumber: 33
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/components/Projects/Project.tsx",
-                            lineNumber: 73,
+                            lineNumber: 89,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/Projects/Project.tsx",
-                    lineNumber: 62,
+                    lineNumber: 78,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/Projects/Project.tsx",
-            lineNumber: 48,
+            lineNumber: 64,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/Projects/Project.tsx",
-        lineNumber: 47,
+        lineNumber: 63,
         columnNumber: 9
     }, this);
 };

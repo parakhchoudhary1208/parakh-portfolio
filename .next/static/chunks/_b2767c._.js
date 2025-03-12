@@ -989,15 +989,14 @@ const Project = ({ thumbnail, title, link, description, languageIcons })=>{
         y.set(0);
     };
     const [isDesktop, setIsDesktop] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].useState(false);
-    useEffect({
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].useEffect({
         "Project.useEffect": ()=>{
-            // Function to update screen size
             const updateScreenSize = {
                 "Project.useEffect.updateScreenSize": ()=>{
                     setIsDesktop(window.innerWidth >= 768);
                 }
             }["Project.useEffect.updateScreenSize"];
-            updateScreenSize(); // Run on mount
+            updateScreenSize();
             window.addEventListener("resize", updateScreenSize);
             return ({
                 "Project.useEffect": ()=>window.removeEventListener("resize", updateScreenSize)
@@ -1008,12 +1007,8 @@ const Project = ({ thumbnail, title, link, description, languageIcons })=>{
         initialX: -50,
         delay: 0.5,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-            onMouseMove: (e)=>{
-                window.innerWidth >= 768 ? handleMouseMove(e) : "";
-            },
-            onMouseOut: ()=>{
-                window.innerWidth >= 768 ? handleMouseLeave() : "";
-            },
+            onMouseMove: isDesktop ? handleMouseMove : undefined,
+            onMouseLeave: isDesktop ? handleMouseLeave : undefined,
             className: "card flex flex-col items-stretch w-full max-w-[428.4px] p-5 md:p-[18px] gap-[30px]",
             style: {
                 transformStyle: "preserve-3d",
@@ -1032,7 +1027,7 @@ const Project = ({ thumbnail, title, link, description, languageIcons })=>{
                     }
                 }, void 0, false, {
                     fileName: "[project]/app/components/Projects/Project.tsx",
-                    lineNumber: 74,
+                    lineNumber: 71,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1046,7 +1041,7 @@ const Project = ({ thumbnail, title, link, description, languageIcons })=>{
                                     children: title
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Projects/Project.tsx",
-                                    lineNumber: 80,
+                                    lineNumber: 77,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1059,7 +1054,7 @@ const Project = ({ thumbnail, title, link, description, languageIcons })=>{
                                             children: link.label
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Projects/Project.tsx",
-                                            lineNumber: 82,
+                                            lineNumber: 79,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -1068,7 +1063,7 @@ const Project = ({ thumbnail, title, link, description, languageIcons })=>{
                                             className: "block dark:hidden"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Projects/Project.tsx",
-                                            lineNumber: 83,
+                                            lineNumber: 80,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -1077,19 +1072,19 @@ const Project = ({ thumbnail, title, link, description, languageIcons })=>{
                                             className: "hidden dark:block"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Projects/Project.tsx",
-                                            lineNumber: 84,
+                                            lineNumber: 81,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/Projects/Project.tsx",
-                                    lineNumber: 81,
+                                    lineNumber: 78,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/Projects/Project.tsx",
-                            lineNumber: 79,
+                            lineNumber: 76,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1097,7 +1092,7 @@ const Project = ({ thumbnail, title, link, description, languageIcons })=>{
                             children: description
                         }, void 0, false, {
                             fileName: "[project]/app/components/Projects/Project.tsx",
-                            lineNumber: 88,
+                            lineNumber: 85,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1109,29 +1104,29 @@ const Project = ({ thumbnail, title, link, description, languageIcons })=>{
                                     width: 24
                                 }, id, false, {
                                     fileName: "[project]/app/components/Projects/Project.tsx",
-                                    lineNumber: 92,
+                                    lineNumber: 89,
                                     columnNumber: 33
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/components/Projects/Project.tsx",
-                            lineNumber: 89,
+                            lineNumber: 86,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/Projects/Project.tsx",
-                    lineNumber: 78,
+                    lineNumber: 75,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/Projects/Project.tsx",
-            lineNumber: 64,
+            lineNumber: 61,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/Projects/Project.tsx",
-        lineNumber: 63,
+        lineNumber: 60,
         columnNumber: 9
     }, this);
 };

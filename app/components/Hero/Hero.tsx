@@ -36,3 +36,51 @@ const Hero = () => {
 }
 
 export default Hero
+
+// function setupVideoScroll() {
+//   let _videoScrollSectionST;
+//   let animationFrameID = null;
+
+//   const _positionScroll = { contents: 0.0 };
+//   const videoBlock = document.querySelector(".product");
+//   const video = document.querySelector("#product-video");
+
+//   video.autoplay = false;
+
+//   const updateVideoTime = () => {
+//     if (video.readyState >= 2) {
+//       video.currentTime = _positionScroll.contents;
+//     } else {
+//       console.warn("Video metadata not loaded yet.");
+//     }
+//     animationFrameID = null;
+//   };
+
+//   _videoScrollSectionST = ScrollTrigger.create({
+//     trigger: videoBlock,
+//     start: "top bottom",
+//     end: "bottom top",
+//     scrub: true,
+//     onUpdate: (self) => {
+//       const current = self.scroll() - self.start;
+//       const full = self.end - self.start;
+
+//       const normalizedDuration = Math.max(video.duration, full / 1000);
+//       const currentPercent = Math.min(Math.max(current / full, 0), 1);
+//       const currentVideoSecond = normalizedDuration * currentPercent;
+
+//       _positionScroll.contents = Math.min(currentVideoSecond, video.duration);
+
+//       if (!animationFrameID) {
+//         animationFrameID = requestAnimationFrame(updateVideoTime);
+//       }
+//     },
+//   });
+//   video.addEventListener("loadedmetadata", () => {
+//     console.log("Video metadata loaded, duration:", video.duration);
+//   });
+
+//   if (!video.readyState) {
+//     console.warn("Video not ready. Ensure the video file is accessible.");
+//   }
+// }
